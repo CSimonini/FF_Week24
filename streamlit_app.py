@@ -23,4 +23,4 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
-st.write('You selected:', sel_choice)
+st.write("show " + (sel_choice) + " in account")
