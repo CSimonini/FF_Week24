@@ -23,4 +23,4 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
-print(sel_choice)
+sel_choice
