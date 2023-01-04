@@ -37,7 +37,7 @@ else:
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
     
- st.markdown(
+st.markdown(
     """
 <style>
 .sidebar .sidebar-content {
