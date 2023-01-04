@@ -28,7 +28,7 @@ if sel_choice == "Grants":
 else:
     string_choice = "show " + sel_choice + " in account"
  
-if sel_choice = "None":
+if sel_choice == "None":
     ""
 else:
     (my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
