@@ -1,8 +1,8 @@
 import streamlit as st
 
-streamlit.title('Snowflake Account Info App')
+st.title('Snowflake Account Info App')
 
-streamlit.text('Use this app to quickly see high-level info about your Snowflake account.')
+st.text('Use this app to quickly see high-level info about your Snowflake account.')
 
 st.markdown(
     """
