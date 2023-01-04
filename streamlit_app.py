@@ -1,4 +1,4 @@
-timport streamlit as st
+import streamlit as st
 
 st.title('Snowflake Account Info App')
 
