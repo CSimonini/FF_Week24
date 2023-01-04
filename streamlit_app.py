@@ -1,10 +1,10 @@
-import streamlit as st
+timport streamlit as st
 
 st.title('Snowflake Account Info App')
 
 st.text('Use this app to quickly see high-level info about your Snowflake account.')
 
 add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
+    "Select what account info you would like to see",
     ("Email", "Home phone", "Mobile phone")
 )
