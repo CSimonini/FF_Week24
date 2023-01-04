@@ -23,4 +23,4 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
-sel_choice
+print(sel_choice)
