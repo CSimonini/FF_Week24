@@ -23,7 +23,13 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
-string_choice = "show " + sel_choice + " in account"
+if sel_choice = "None":
+    string_choice = ""
+elif sel_choice = "Grants":
+    string_choice = "show " + sel_choice + " on account"
+else:
+    string_choice = "show " + sel_choice + " in account"
+    
 my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute(string_choice)
