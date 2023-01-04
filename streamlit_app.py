@@ -6,5 +6,15 @@ st.text('Use this app to quickly see high-level info about your Snowflake accoun
 
 add_selectbox = st.sidebar.selectbox(
     "Select what account info you would like to see",
-    ("Email", "Home phone", "Mobile phone")
+    ("None",
+     "Shares",
+     "Roles",
+     "Grants",
+     "Users",
+     "Warehouses",
+     "Databases",
+     "Schemas",
+     "Tables",
+     "Views"     
+    )
 )
