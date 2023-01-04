@@ -23,4 +23,10 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
-st.write("show " + (sel_choice) + " in account")
+"""
+my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
+my_cur = my_cnx.cursor()
+my_cur.execute("show " + sel_choice + " in account")
+my_data_rows = my_cur.fetchall()
+st.dataframe(my_data_rows)
+"""
