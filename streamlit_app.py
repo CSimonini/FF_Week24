@@ -6,7 +6,8 @@ from urllib.error import URLError
 
 st.title('Snowflake Account Info App')
 
-st.markdown("Use this app to quickly see high-level info about your Snowflake account.")
+st.markdown("Use this app to quickly see high-level info about your Snowflake account.
+            ")
 
 sel_choice = st.sidebar.selectbox(
     "Select what account info you would like to see",
