@@ -19,3 +19,9 @@ add_selectbox = st.sidebar.selectbox(
      "Views"     
     )
 )
+
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cur = my_cnx.cursor()
+my_cur.execute("show databases")
+my_data_rows = my_cur.fetchall()
+streamlit.dataframe(my_data_rows)
