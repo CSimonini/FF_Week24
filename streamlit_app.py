@@ -31,9 +31,8 @@ else:
 if sel_choice == "None":
     ""
 else:
-    (my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
+    my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
     my_cur = my_cnx.cursor()
     my_cur.execute(string_choice)
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
-    )
