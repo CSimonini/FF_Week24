@@ -23,4 +23,4 @@ add_selectbox = st.sidebar.selectbox(
     )
 )
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
