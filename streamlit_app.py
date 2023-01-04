@@ -23,4 +23,7 @@ add_selectbox = st.sidebar.selectbox(
     )
 )
 
-my_cnx = snowflake.connector.connect(**st.secrets["snowflake"])
+my_cur = my_cnx.cursor()
+my_cur.execute("show warehouses")
+my_data_rows = my_cur.fetchall()
+streamlit.dataframe(my_data_rows)
