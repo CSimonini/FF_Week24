@@ -6,10 +6,10 @@ streamlit.text('Use this app to quickly see high-level info about your Snowflake
 
 st.markdown(
     """
-<style>
-.sidebar .sidebar-content {
-    background-color: #DEE0FB;
-    color: #ffffff
+    <style>
+    .sidebar .sidebar-content {
+        background-color: #DEE0FB;
+        color: #ffffff
 }
 </style>
 """,
