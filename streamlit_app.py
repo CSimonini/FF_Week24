@@ -23,9 +23,9 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
-if sel_choice = "None":
+if sel_choice =="None":
     string_choice = ""
-elif sel_choice = "Grants":
+elif sel_choice == "Grants":
     string_choice = "show " + sel_choice + " on account"
 else:
     string_choice = "show " + sel_choice + " in account"
