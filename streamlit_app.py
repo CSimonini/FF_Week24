@@ -43,4 +43,4 @@ def add_logo(logo_path, width, height):
     modified_logo = logo.resize((width, height))
     return modified_logo
 
-st.sidebar.image(add_logo(logo_path="https://frostyfriday.org/wp-content/uploads/2022/11/ff_logo_trans.png", width=50, height=60)) 
+st.sidebar.image(add_logo(logo_path="ff_logo_trans.png", width=50, height=60)) 
