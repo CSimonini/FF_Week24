@@ -8,6 +8,23 @@ st.title('Snowflake Account Info App')
 
 st.markdown("Use this app to quickly see high-level info about your Snowflake account.")
 
+########
+
+st.markdown(
+    """
+<style>
+.sidebar .sidebar-content {
+    background-color: #DEE0FB;
+    background-image: none;
+    color: #ffffff
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
+##########
+
 # Add the logo in the sidebar
 
 def add_logo(logo_path, width, height):
