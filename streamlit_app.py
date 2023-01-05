@@ -37,3 +37,14 @@ else:
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
     
+st.markdown(
+    """
+<style>
+.sidebar .sidebar-content {
+    background-image: linear-gradient(#DEE0FB);
+    color: white;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
