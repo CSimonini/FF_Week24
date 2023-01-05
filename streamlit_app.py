@@ -4,6 +4,7 @@ import requests
 import snowflake.connector
 from urllib.error import URLError
 from PIL import Image
+from Snowflake import snowpark
 
 st.title('Snowflake Account Info App')
 
