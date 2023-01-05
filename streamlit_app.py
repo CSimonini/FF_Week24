@@ -13,7 +13,7 @@ st.markdown("Use this app to quickly see high-level info about your Snowflake ac
 st.markdown(
     """
 <style>
-.sidebar .sidebar-content {
+st.sidebar-content {
     background-color: #DEE0FB;
     background-image: none;
     color: #ffffff
