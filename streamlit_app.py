@@ -12,7 +12,7 @@ st.markdown("Use this app to quickly see high-level info about your Snowflake ac
 st.markdown("""
 <style>
 .css-6qob1r {
-    background-color: red;
+    background-color: rgb(222, 224, 251);
 }
 </style>
     """, unsafe_allow_html=True)
