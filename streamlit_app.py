@@ -9,6 +9,18 @@ st.title('Snowflake Account Info App')
 
 st.markdown("Use this app to quickly see high-level info about your Snowflake account.")
 
+# Add the logo in the sidebar
+
+def add_logo(logo_path, width, height):
+    """Read and return a resized logo"""
+    logo = Image.open(logo_path)
+    modified_logo = logo.resize((width, height))
+    return modified_logo
+
+st.sidebar.image(add_logo(logo_path="ff_logo_trans.png", width = 300, height = 300)) 
+
+# Add the selection
+
 sel_choice = st.sidebar.selectbox(
     "Select what account info you would like to see",
     ("None",
@@ -24,6 +36,8 @@ sel_choice = st.sidebar.selectbox(
     )
 )
 
+# Create the table base on selection
+
 if sel_choice == "Grants":
     string_choice = "show " + sel_choice + " on account"
 else:
@@ -37,11 +51,3 @@ else:
     my_cur.execute(string_choice)
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
-    
-def add_logo(logo_path, width, height):
-    """Read and return a resized logo"""
-    logo = Image.open(logo_path)
-    modified_logo = logo.resize((width, height))
-    return modified_logo
-
-st.sidebar.image(add_logo(logo_path="ff_logo_trans.png", width = 400, height = 400)) 
