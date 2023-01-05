@@ -9,7 +9,13 @@ st.title('Snowflake Account Info App')
 st.markdown("Use this app to quickly see high-level info about your Snowflake account.")
 
 ########
-
+st.markdown("""
+<style>
+.css-6qob1r e1fqkh3o3 {
+    background-color: red;
+}
+</style>
+    """, unsafe_allow_html=True)
 ##########
 
 # Add the logo in the sidebar
