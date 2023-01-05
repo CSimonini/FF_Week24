@@ -37,4 +37,4 @@ else:
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
     
-streamlit.sidebar.write(f"App created using Snowpark version {snowflake.snowpark.__version__}")
+st.sidebar.write(f"App created using Snowpark version {snowflake.snowpark.__version__}")
