@@ -37,5 +37,3 @@ else:
     my_cur.execute(string_choice)
     my_data_rows = my_cur.fetchall()
     st.dataframe(my_data_rows)
-    
-st.sidebar.write(f"App created using Snowpark version {snowflake.snowpark.__version__}")
