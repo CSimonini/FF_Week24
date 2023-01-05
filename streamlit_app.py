@@ -3,6 +3,7 @@ import pandas
 import requests
 import snowflake.connector
 from urllib.error import URLError
+from PIL import Image
 
 st.title('Snowflake Account Info App')
 
