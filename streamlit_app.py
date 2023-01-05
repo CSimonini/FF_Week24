@@ -4,8 +4,6 @@ import requests
 import snowflake.connector
 from urllib.error import URLError
 from PIL import Image
-import snowflake.snowpark
-
 st.title('Snowflake Account Info App')
 
 st.markdown("Use this app to quickly see high-level info about your Snowflake account.")
